@@ -1,0 +1,192 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ana & Alícia</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:
+        linear-gradient(135deg,#050505,#111,#1b1b1b);
+      padding:30px;
+    }
+
+    .card{
+      width:100%;
+      max-width:700px;
+      background: linear-gradient(
+        145deg,
+        #f4d06f,
+        #d4a437,
+        #f7e7a9
+      );
+      border-radius:30px;
+      padding:50px 40px;
+      box-shadow:
+        0 0 40px rgba(212,164,55,0.5),
+        0 0 80px rgba(255,215,100,0.2);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border:3px solid rgba(255,255,255,0.25);
+      border-radius:30px;
+      margin:12px;
+    }
+
+    .top{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .top h1{
+      font-size:3.2rem;
+      color:#111;
+      letter-spacing:2px;
+      margin-bottom:10px;
+    }
+
+    .top p{
+      font-size:1.1rem;
+      color:#222;
+      font-style:italic;
+    }
+
+    .divider{
+      width:120px;
+      height:3px;
+      background:#111;
+      margin:25px auto;
+      border-radius:10px;
+    }
+
+    .info{
+      display:grid;
+      gap:22px;
+      margin-top:25px;
+    }
+
+    .item{
+      background:rgba(255,255,255,0.18);
+      border:1px solid rgba(255,255,255,0.3);
+      padding:18px 22px;
+      border-radius:18px;
+      backdrop-filter: blur(5px);
+    }
+
+    .label{
+      font-size:0.95rem;
+      font-weight:bold;
+      color:#222;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:6px;
+    }
+
+    .value{
+      font-size:1.2rem;
+      color:#000;
+      font-weight:600;
+    }
+
+    .footer{
+      margin-top:40px;
+      text-align:center;
+      color:#111;
+      font-size:1rem;
+      font-style:italic;
+    }
+
+    @media(max-width:600px){
+      .top h1{
+        font-size:2.3rem;
+      }
+
+      .card{
+        padding:35px 25px;
+      }
+
+      .value{
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="top">
+      <h1>Ana & Alícia</h1>
+
+      <div class="divider"></div>
+
+      <p>
+        Venha celebrar conosco nosso almoço de aniversário ✨
+      </p>
+    </div>
+
+    <div class="info">
+
+      <div class="item">
+        <div class="label">Data</div>
+        <div class="value">
+          Sábado • 22/05
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="label">Horário</div>
+        <div class="value">
+          12:00 • Meio-dia
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="label">Local</div>
+        <div class="value">
+          Rua Verão, 29 — Juquehy
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="label">Informação</div>
+        <div class="value">
+          Festa exclusiva para crianças
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="label">Idade</div>
+        <div class="value">
+          Comemorando nossos 13 anos 🎉
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Esperamos você para um dia especial 💛
+    </div>
+
+  </div>
+
+</body>
+</html>
